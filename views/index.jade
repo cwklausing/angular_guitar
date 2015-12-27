@@ -1,10 +1,8 @@
 extends layout
 
 block content
-  h1 Guitar to Piano Converter
+  h1 Angular Guitar
 
-  div.guitar
-    img(class='guitar-image' src="/images/guitar_neck.jpg")
-
-  div.piano
-    embed(class='piano-image' src='/images/piano.svg')
+  div.guitar(ng-controller="converter")
+    embed(class='guitar-image' src="/images/guitar.svg")
+    button(ng-click="test()") Test
